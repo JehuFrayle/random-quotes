@@ -9,7 +9,7 @@ export default function Card() {
         fetch('https://fakeface.rest/face/json')
         .then(response => response.json())
         .then(response => setPerson(response.image_url))
-        .catch(err => console.error(err))
+        .catch(err => console.error(err));
     }
     function getQuote() {
         const options = {
@@ -22,9 +22,9 @@ export default function Card() {
         fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
        .then(response => response.json())
        .then(response => setQuote(response.content))
-       .catch(err => console.error(err))
+       .catch(err => console.error(err));
     }
-    useEffect(() =>{getQuote(); getFace()}, [])
+    useEffect(() =>{getQuote(); getFace();}, []);
     
     return (
         <div className="Card">
