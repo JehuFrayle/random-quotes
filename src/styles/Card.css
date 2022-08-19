@@ -3,7 +3,7 @@
     grid-template-columns: 2fr 3fr;
     background-color: white;
     max-width: 600px;
-    max-height: 200px;
+    min-height: 200px;
     padding: 25px;
     margin: 20px;
     box-shadow: black 10px -10px;
