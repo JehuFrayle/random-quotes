@@ -1,16 +1,21 @@
 .Card {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    background-color: rgb(137, 203, 203);
-    width: 600px;
-    height: 200px;
-    padding: 15px;
-    border-radius: 20px 50px;
-    margin-top: 20px;
+    background-color: white;
+    max-width: 600px;
+    max-height: 200px;
+    padding: 25px;
+    top: 20px;
+    box-shadow: black 10px -10px;
+    outline: solid black 5px;
+    outline-offset: -15px;
+    border: 1px solid;
 }
 .Card img {
     width: 100px;
     height: 100px;
+    margin: 25px;
+    margin-left: 10px;
     border-radius: 50%;
     place-self: center;
     background-color: rgb(149, 146, 146);
