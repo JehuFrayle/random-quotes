@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/App.css';
-import { QuoteProvider } from './context/QuoteContext';
+import '../styles/App.css';
+import { QuoteProvider } from '../context/QuoteContext';
 import Card from './Card';
 import { Author } from './Author';
 

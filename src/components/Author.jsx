@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { QuoteContext } from "./context/QuoteContext";
-import "./styles/AuthorCard.css"
+import { QuoteContext } from "../context/QuoteContext";
+import "../styles/AuthorCard.css"
 
 export const Author = () => {
     const {quote} = useContext(QuoteContext)

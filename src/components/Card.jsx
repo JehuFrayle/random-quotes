@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { QuoteContext } from "./context/QuoteContext";
-import './styles/Card.css'
+import { QuoteContext } from "../context/QuoteContext";
+import '../styles/Card.css'
 
 export default function Card() {
     const { quote, person, getQuote, getPerson } = useContext(QuoteContext);
