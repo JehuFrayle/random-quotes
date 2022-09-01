@@ -12,11 +12,12 @@ export default function Card() {
         .catch(err => console.error(err));
     }
     function getQuote() {
+        const {REACT_APP_API_QUOTES_HOST, REACT_APP_API_QUOTES_KEY} = process.env
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '22abfa6981msh775849b32286a0dp1665a9jsn0138c7d0b360',
-                'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+                'X-RapidAPI-Key':REACT_APP_API_QUOTES_KEY,
+                'X-RapidAPI-Host':REACT_APP_API_QUOTES_HOST
             }
         };
         fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
