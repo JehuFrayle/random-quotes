@@ -3,11 +3,11 @@ import { QuoteContext } from "../context/QuoteContext";
 import "../styles/AuthorCard.css"
 
 export const Author = () => {
-    const {quote} = useContext(QuoteContext)
-    return(
-        <details closed>
+    const { quote } = useContext(QuoteContext)
+    return (
+        <details>
             <summary>Who said it then?</summary>
-            <a href={quote.originator.url} target='blank'>{quote.originator.name}</a>
+            <p>This was said by <a href={quote.originator.url} target='blank'>{quote.originator.name}</a></p>
         </details>
     )
 }
