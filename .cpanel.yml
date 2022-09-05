@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/jehufray/projects.jehufrayle.com/random-quotes
+    - ~/nodejs/bin/npm run build
+    - /bin/cp -R ./build $DEPLOYPATH
